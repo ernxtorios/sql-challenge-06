@@ -40,13 +40,13 @@ The query that corresponds to the given is as follows:
 
 > SELECT
 >
-> mt.ReportsTo,
+> employee.ReportsTo,
 >
 > COUNT(mt.ID) as Members,
 >
 > ROUND(AVG(mt.Age), 0) as Average_Age
 > 
-> FROM employee mt
+> FROM employee
 >
 > WHERE ReportsTo IS NOT NULL
 >
