@@ -24,7 +24,7 @@ Result set table:
 
 |   ReportsTo       |   Members |   Average_Age |
 |-------------------|-----------|---------------|
-|   Bob Boss        |   2       |   24          |
+|   Bob Boss        |   2       |   23          |
 |   Daniel Smith    |   1       |   22          |
 |   David S         |   1       |   25          |
 |   Jenny Richards  |   2       |   31          |
@@ -40,18 +40,16 @@ The query that corresponds to the given is as follows:
 
 > SELECT
 >
-> employee.ReportsTo,
+> employees.ReportsTo,
 >
-> COUNT(mt.ID) as Members,
+> COUNT(employees.ID) as Members,
 >
-> ROUND(AVG(mt.Age), 0) as Average_Age
+> ROUND(AVG(employees.Age), 0) as Average_Age
 > 
-> FROM employee
+> FROM employees
 >
 > WHERE ReportsTo IS NOT NULL
 >
-> GROUP BY
+> GROUP BY employees.ReportsTo
 >
-> mt.ReportsTo
->
-> ORDER BY mt.ReportsTo
+> ORDER BY employees.ReportsTo

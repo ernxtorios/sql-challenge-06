@@ -6,6 +6,6 @@ INSERT INTO employees (ID, FirstName, LastName, ReportsTo, Position, Age) VALUES
 (3, 'Jenny', 'Richards', NULL, 'CEO', 45),
 (4, 'Robert', 'Black', 'Daniel Smith', 'Sales', 22),
 (5, 'Noah', 'Fritz', 'Jenny Richards', 'Assistant', 30),
-(6, 'David', 'S', 'Jenny Richardas', 'Director', 32),
+(6, 'David', 'S', 'Jenny Richards', 'Director', 32),
 (7, 'Ashley', 'Wells', 'David S', 'Assistant', 25),
 (8, 'Ashley', 'Johnson', NULL, 'Intern', 25);
